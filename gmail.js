@@ -1,6 +1,6 @@
 function getSearchConfigs() {
   var rulesSheetId = PropertiesService.getScriptProperties().getProperty('rules-sheet-id');
-  Logger.log(`rules-sheet-id: ${rulesSheetId}`);
+  Logger.log('rules-sheet-id: ' + rulesSheetId);
   var ss = SpreadsheetApp.openById(rulesSheetId);
   var sheet = ss.getSheets()[0];
   var range = ss.getRange("A2");
@@ -10,5 +10,5 @@ function getSearchConfigs() {
 
 function searchGmail() {
   var searchString = getSearchConfigs();
-  Logger.log(`search-string: ${searchString}`);
+  Logger.log('search-string: ' + searchString);
 }
