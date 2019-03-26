@@ -11,4 +11,9 @@ function getSearchConfigs() {
 function searchGmail() {
   var searchString = getSearchConfigs();
   Logger.log('search-string: ' + searchString);
+
+  var threads = GmailApp.search(searchString);
+  for (var i=0; i < threads.length; i++) {
+    Logger.log(threads[i].getFirstMessageSubject());
+  }
 }
