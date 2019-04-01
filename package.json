@@ -1,0 +1,31 @@
+{
+  "name": "ifttt-gmail-to-webhook",
+  "version": "0.0.1",
+  "description": "Google Apps Script (GAS) for GMail notifications to IFTTT",
+  "main": "gmail.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test-main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdruth/ifttt-gmail-to-webhook.git"
+  },
+  "keywords": [
+    "google",
+    "gas",
+    "gmail",
+    "ifttt"
+  ],
+  "author": "Brice Ruth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bdruth/ifttt-gmail-to-webhook/issues"
+  },
+  "homepage": "https://github.com/bdruth/ifttt-gmail-to-webhook#readme",
+  "devDependencies": {
+    "tape": "^4.10.1"
+  }
+}

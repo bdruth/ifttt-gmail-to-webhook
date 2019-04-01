@@ -1,0 +1,10 @@
+{
+  "type": "node",
+  "request": "launch",
+  "name": "Tape Current File",
+  "program": "${workspaceFolder}\\node_modules\\tape\\bin\\tape",
+  "args": [
+      "${file}"
+  ],
+  "console": "internalConsole"
+}
