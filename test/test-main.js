@@ -20,7 +20,7 @@ test('searchConfigs is an array of Search objects', function (t) {
     t.ok(searchConfigs.length > 0);
 
     t.plan(3 + searchConfigs.length);
-    for (var i; i < searchConfigs.length; i++) {
+    for (var i=0; i < searchConfigs.length; i++) {
       var config = searchConfigs[i];
       t.ok(config instanceof Search);
     }
