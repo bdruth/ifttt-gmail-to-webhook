@@ -1,0 +1,1 @@
+var rulesSheetId = PropertiesService.getScriptProperties().getProperty('rules-sheet-id');
