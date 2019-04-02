@@ -16,11 +16,12 @@ test('searchConfigs is an array of Search objects', function (t) {
     t.plan(3);
 
     t.ok(searchConfigs);
-    t.true(Array.isArray(searchConfigs));
-    t.true(searchConfigs.length > 0);
-    
+    t.ok(Array.isArray(searchConfigs));
+    t.ok(searchConfigs.length > 0);
+
     t.plan(3 + searchConfigs.length);
-    searchConfigs.forEach((config) => {
-      t.true(config instanceof Search);
-    });
+    for (var i; i < searchConfigs.length; i++) {
+      var config = searchConfigs[i];
+      t.ok(config instanceof Search);
+    }
 });
