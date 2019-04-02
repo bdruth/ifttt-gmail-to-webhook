@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/bdruth/ifttt-gmail-to-webhook#readme",
   "devDependencies": {
+    "tap": "^12.6.1",
     "tape": "^4.10.1"
   }
 }
